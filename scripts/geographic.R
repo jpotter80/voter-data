@@ -9,7 +9,7 @@ voter_distribution_zip <- data_renamed %>%
   group_by(Zip) %>%
   summarise(Count = n()) 
 
-# Visualizing voter distribution across zip codes
+# Visualizing voter distribution across zip codes # need to modify this to make the chart more readable
 
 ggplot(voter_distribution_zip, aes(x = Zip, y = Count)) +
   geom_bar(stat = "identity", fill = "skyblue") +
@@ -28,7 +28,7 @@ party_affiliation_zip <- data_renamed %>%
   group_by(Zip, Party) %>%
   summarise(Count = n(), .groups = 'drop')
 
-# Visualizing party affiliation by zip code
+# Visualizing party affiliation by zip code # need to modify this to make the chart more readable
 
 ggplot(party_affiliation_zip, aes(x = Zip, y = Count, fill = Party)) +
   geom_bar(stat = "identity", position = "dodge") +

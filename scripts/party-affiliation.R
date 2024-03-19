@@ -99,8 +99,21 @@ ggplot(party_by_age, aes(x = AgeGroup, y = Count, fill = Party)) +
 party_by_school_dist <- data_renamed %>%
   group_by(School_Dist, Party) %>%
   summarise
-#
-#
 
+# Print tibble of the distribution
+print(party_by_school_dist)
+
+# Visualize the distribution
+
+ggplot(party_by_school_dist, aes(x = School_Dist, y = Count, fill = Party)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  theme_minimal() +
+  labs(title = "Party Affiliation by School District",
+       x = "School District",
+       y = "Number of Voters")
+
+# This script groups the dataset by School_Dist and Party, calculates the number of voters in each group,
+# and visualizes the distribution with a dodged bar chart to show party affiliation within school districts.
+# saved the plot as a .png file party-by-school-dist.png
             
 
