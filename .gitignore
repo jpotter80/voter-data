@@ -9,6 +9,7 @@
 # User-specific files
 .Ruserdata
 .voting.txt
+*.txt
 
 # Example code in package build process
 *-Ex.R
@@ -39,7 +40,8 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
-
+.env
+*.env
 # pkgdown site
 docs/
 
