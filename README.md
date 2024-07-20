@@ -22,14 +22,6 @@ Each section is supported by R scripts complete with detailed comments explainin
 - **Results/**: Features output from the analyses, including tables, charts, and reports summarizing the key findings.
 - **Documentation/**: Provides additional resources such as project reports, methodology descriptions, and analysis interpretations.
 
-## Getting Started
-
-To replicate this analysis or explore the dataset with your own questions, please see the `README.md` in the `Scripts/` directory for instructions on setting up your environment, installing necessary R packages, and executing the scripts.
-
-## Contributing
-
-Contributions to this project are welcome! Whether you have suggestions for additional analyses, improvements to the existing scripts, or corrections to the data, please feel free to open an issue or submit a pull request.
-
 ## License
 
 This project is available under the [MIT License](LICENSE). Feel free to use, modify, and distribute the contents of this repository, provided that proper credit is given.
